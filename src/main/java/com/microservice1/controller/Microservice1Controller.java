@@ -37,6 +37,7 @@ public class Microservice1Controller {
 		// } else {
 		// cm.setHttpStatus(HttpStatus.NOT_ACCEPTABLE);
 		// }
+		System.out.println(id);
 		ContentMetadata cm = service.getContentDetails(id);
 		return new ResponseEntity<>(cm, cm.getHttpStatus());
 	}
